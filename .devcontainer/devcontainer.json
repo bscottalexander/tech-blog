@@ -1,0 +1,22 @@
+{
+    "name": "TechBlog Development Environment",
+    "dockerComposeFile": "../deployments/development/docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "settings": {
+        "terminal.integrated.automationShell.linux": "/bin/zsh",
+        "[javascript]": {
+            "editor.formatOnSave": true,
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+    },
+    "extensions": [
+        "esbenp.prettier-vscode",
+        "jpoissonnier.vscode-styled-components",
+        "graphql.vscode-graphql",
+        "eamodio.gitlens"
+    ],
+    "remoteUser": "vscode",
+    "forwardPorts": [3306],
+    "postCreateCommand": "sudo chown vscode data"
+}

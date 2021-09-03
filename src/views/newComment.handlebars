@@ -1,0 +1,10 @@
+<form action='/posts/{{post.id}}/comments' method='post'>
+    <input type="hidden" id="id" name="id" value="{{comment.id}}">
+    <div>
+        <label for='content'>Content:</label>
+        <textarea id='content' name='content' rows="5" cols="33">{{comment.content}}</textarea>
+    </div>
+    <div>
+        <input type='submit' value='Submit' />
+    </div>
+</form>
